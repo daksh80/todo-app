@@ -1,5 +1,5 @@
 import React from 'react';
-import { FachevronDown,FaInbox,FaRegCalendarAlt,FaRegCalendar} from 'react-icons/fa'
+import { FaChevronDown,FaInbox,FaRegCalendarAlt,FaRegCalendar} from 'react-icons/fa'
 
 export const Sidebar = () =>(
        <div className="sidebar" data-testid ="sidebar">
@@ -8,5 +8,11 @@ export const Sidebar = () =>(
               <li><span><FaRegCalendar/></span><span>Today</span></li>
               <li><span><FaRegCalendarAlt/></span><span>Next 7 days</span></li>
        </ul>
+       <div className ="sidebar__middle">
+              <span><FaChevronDown/></span>
+              <h2>Projects</h2>
+       </div>
+        <ul className ="sidebar__project">Project will be here!</ul>
+        Add project component Here!
 </div>
 );
